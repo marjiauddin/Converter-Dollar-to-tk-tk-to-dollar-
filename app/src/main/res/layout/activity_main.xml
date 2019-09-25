@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/amountET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Amount"
+        android:inputType="number"
+
+
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/dollartotkRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dollar to Tk"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/tktodollarRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Tk to Dollar"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+           />
+
+
+    </RadioGroup>
+
+<Button
+    android:id="@+id/convertBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Convert"
+    android:textAllCaps="false"
+    android:textSize="16sp"
+    android:layout_margin="5dp"/>
+
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="30dp"
+       android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>
